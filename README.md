@@ -11,4 +11,4 @@ This repository contains the code for reproducing the results of the paper "BOLT
 - AG News [download](https://huggingface.co/datasets/ag_news)
 - Tweet Eval [download](https://huggingface.co/datasets/tweet_eval)
 
-The bolt text classification benchmarks can be run through the `bolt_text_classification_benchmarks.py` script. The datasets can be downloaded through the link above. 
+The BOLT text classification benchmarks can be run through the `bolt_text_classification_benchmarks.py` script. The datasets can be downloaded through the link above. 
