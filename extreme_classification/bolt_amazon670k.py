@@ -22,16 +22,14 @@ def train_model(train_file, test_file, num_epochs, learning_rate):
     model = thirdai.bolt.UniversalDeepTransformer(
         file_format="svm", n_target_classes=670091, input_dim=135909
     )
-    validation = thirdai.bolt.Validation(
-        test_file, metrics=["categorical_accuracy"], interval=32
-    )
-    model.train(
-        train_file,
-        validation=validation,
-        epochs=num_epochs,
-        learning_rate=learning_rate,
-        metrics=["categorical_accuracy"],
-    )
+    for _ in range(num_epochs):
+        model.train(
+            train_file,
+            epochs=num_epochs,
+            learning_rate=learning_rate,
+            metrics=["categorical_accuracy"],
+        )
+        model.evaluate(test_file, metrics=["categorical_accuracy"])
     return model
 
 
