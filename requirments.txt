@@ -1,0 +1,7 @@
+thirdai
+datasets
+transformers
+pandas
+tensorflow
+torch
+gdown
