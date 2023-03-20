@@ -4,4 +4,3 @@ transformers
 pandas
 tensorflow
 torch
-gdown
