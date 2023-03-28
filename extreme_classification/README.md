@@ -18,10 +18,10 @@ mv Amazon670K.bow Amazon670k
 
 
 ## Reproducing Experiments
-Reproducing the BOLT extreme classification results is simple. Just run the corresponding script. 
+Reproducing the BOLT extreme classification results is simple. Just run the bolt_extreme_classification script with the corresponding dataset.
 
 For e.g. Amazon 670k, run
 
 ```
-python3 bolt_amazon670k.py
+python3 bolt_extreme_classification.py --dataset amazon670k
 ```
